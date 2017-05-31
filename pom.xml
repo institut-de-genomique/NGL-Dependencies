@@ -13,8 +13,9 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+    <module>app-ngl-sq</module>
  	  <module>authentication</module>
-  	<module>app-ngl-sq</module>
+  	
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
