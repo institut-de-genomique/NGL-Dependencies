@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.mongojack</groupId>
+  <artifactId>mongojack</artifactId>
+  <versioning>
+    <release>2.6.1.IG</release>
+    <versions>
+      <version>2.1.0-IG</version>
+      <version>2.3.1-IG</version>
+      <version>2.5.0-IG</version>
+      <version>2.6.1-IG</version>
+      <version>2.6.1.IG</version>
+    </versions>
+    <lastUpdated>20161021092853</lastUpdated>
+  </versioning>
+</metadata>
