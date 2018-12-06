@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                        http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- The Basics -->
+	<groupId>fr.cea.ig</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<name>Genophere POM Parent</name>
+	<description>Global pom for all IG project</description>
+	<inceptionYear>2012</inceptionYear>
+	<organization>
+		<name>Genoscope</name>
+		<url>http://www.genoscope.cns.fr/</url>
+	</organization>
+	<!-- Environment Settings -->
+	<issueManagement>
+		<system>jira</system>
+		<url>http://gsphere.genoscope.cns.fr/jira/</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>jenkis</system>
+		<url>https://gsphere.genoscope.cns.fr/jenkins/</url>
+	</ciManagement>
+
+	<scm>
+		<url>http://villarica.genoscope.cns.fr/svn</url>
+	</scm>
+
+	<profiles>
+		<profile>
+			<id>distrib</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<distributionManagement>
+				<repository>
+					<uniqueVersion>false</uniqueVersion>
+					<id>release</id>
+					<name>Genoscope Releases Repository</name>
+					<url>https://gsphere.genoscope.cns.fr/nexus/content/repositories/releases/</url>
+					<layout>default</layout>
+				</repository>
+				<snapshotRepository>
+					<uniqueVersion>false</uniqueVersion>
+					<id>snapshot</id>
+					<name>Genoscope Snapshots Repository</name>
+					<url>https://gsphere.genoscope.cns.fr/nexus/content/repositories/snapshots/</url>
+					<layout>default</layout>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+	</profiles>
+
+
+</project>
+
